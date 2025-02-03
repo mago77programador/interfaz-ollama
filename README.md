@@ -21,7 +21,7 @@ This is a simple web interface for interacting with the OLLama language model. I
 1. Clone the repository:
 
    ```
-   git clone https://github.com/your-username/ollama-interface.git
+   git clone https://github.com/mago77programador/ollama-interface.git
    ```
 
 2. Navigate to the project directory:
