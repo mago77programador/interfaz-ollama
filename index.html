@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OLLama Interface</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>OLLama Interface</h1>
+      <div class="model-selector">
+        <label for="model-select">Select Model:</label>
+        <select id="model-select">
+          <!-- Options for available models will be dynamically added here -->
+        </select>
+      </div>
+      <div class="prompt-container">
+        <textarea
+          id="prompt-input"
+          placeholder="Enter your prompt here..."
+        ></textarea>
+        <button id="submit-btn">Submit</button>
+      </div>
+      <div class="response-container">
+        <div class="response-section">
+          <h2>Prompt</h2>
+          <pre id="prompt-display"></pre>
+        </div>
+        <div class="response-section">
+          <h2>Reasoning</h2>
+          <pre id="reasoning-display"></pre>
+        </div>
+        <div class="response-section">
+          <h2>Response</h2>
+          <pre id="response-display"></pre>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
