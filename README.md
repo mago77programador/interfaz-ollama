@@ -1,52 +1,85 @@
-# OLLama Interface
+# Interfaz Ollama con Deepseek
 
-Este es un interfaz web simple para interactuar con el modelo de lenguaje OLLama. Te permite seleccionar un modelo, ingresar un prompt y ver la respuesta del modelo, incluyendo el razonamiento y la respuesta final.
+Interfaz web simple para interactuar con el modelo Deepseek a través de Ollama.
 
-## Características
+## Requisitos Previos
 
-- Selección de modelos OLLama disponibles
-- Ingresar un prompt y enviarlo al modelo
-- Mostrar el razonamiento y la respuesta final en secciones separadas
-- Diseño responsivo y visualmente atractivo
+- Ollama instalado y ejecutándose
+- Modelo `deepseek-r1:8b` descargado (en la línea 6 del script.js puedes poner otro)
+- Navegador web moderno
 
-## Comenzando
+## Instalación
 
-### Prerrequisitos
-
-- Una instancia en ejecución del servidor OLLama en local
-- Un navegador web moderno (por ejemplo, Google Chrome, Mozilla Firefox, Microsoft Edge)
-
-### Instalación
-
-1. Clona el repositorio:
-
-   ```sh
+1. Clonar el repositorio:
+   ```bash
    git clone https://github.com/mago77programador/interfaz-ollama.git
    ```
 
-2. Navega al directorio del proyecto:
-
-   ```sh
+2. Navegar al directorio del proyecto:
+   ```bash
    cd interfaz-ollama
    ```
 
-3. Abre el archivo `index.html` en tu navegador web.
+3. Asegurarse de que Ollama está ejecutándose:
+  
 
-### Uso
+#### Windows
+Puedes utilizar el comando `tasklist` para buscar procesos en ejecución. Abre el Símbolo del sistema (CMD) y ejecuta:
+```cmd
+tasklist | findstr /I "ollama"
+```
+Este comando buscará cualquier proceso que contenga "ollama" en su nombre.
 
-1. Selecciona el modelo OLLama deseado del menú desplegable.
-2. Ingresa tu prompt en el área de texto.
-3. Haz clic en el botón "Submit" para generar la respuesta.
-4. El razonamiento y la respuesta final se mostrarán en las secciones correspondientes.
+#### Linux
+En Linux, puedes usar el comando `ps` combinado con `grep` para buscar procesos. Abre la terminal y ejecuta:
+```sh
+ps aux | grep -i "ollama"
+```
+Esto listará los procesos que contienen "ollama".
 
-## Personalización
+#### macOS
+En macOS, el proceso es similar al de Linux. Abre la Terminal y ejecuta:
+```sh
+ps aux | grep -i "ollama"
+```
+Esto también te mostrará los procesos que contienen "ollama".
 
-Puedes personalizar la apariencia del interfaz modificando el archivo CSS (`style.css`). La paleta de colores y el diseño se pueden ajustar según tus preferencias.
+Estos comandos te permitirán verificar si Ollama está en ejecución directamente desde la consola. ¿Hay algo más en lo que pueda asistirte?
 
-## Contribuyendo
 
-Si encuentras algún problema o tienes sugerencias para mejoras, no dudes en abrir un issue o enviar un pull request.
+
+
+
+
+4. Abrir `index.html` en el navegador.
+
+## Uso
+
+1. Escribir el prompt en el área de texto.
+2. Hacer clic en "Submit".
+3. Ver la respuesta generada:
+   - La sección "Reasoning" mostrará el contenido entre las etiquetas `<think>` y `</think>`.
+   - La sección "Response" mostrará la respuesta generada por el modelo.
+
+## Estructura del Proyecto
+
+- index.html: Contiene la estructura HTML de la interfaz.
+- style.css: Contiene los estilos CSS para la interfaz.
+- script.js: Contiene la lógica JavaScript para interactuar con la API de Ollama.
+- README.md: Este archivo, contiene la documentación del proyecto.
+
+## Tecnologías Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+- API Ollama
+
+## Notas
+
+- El modelo predeterminado es `deepseek-r1:8b`.
+- La aplicación se comunica con la API de OLLama en `http://localhost:11434`.
 
 ## Licencia
 
-Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
+Este proyecto está licenciado bajo la Licencia MIT.
