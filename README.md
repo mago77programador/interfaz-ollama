@@ -44,12 +44,7 @@ ps aux | grep -i "ollama"
 ```
 Esto también te mostrará los procesos que contienen "ollama".
 
-Estos comandos te permitirán verificar si Ollama está en ejecución directamente desde la consola. ¿Hay algo más en lo que pueda asistirte?
-
-
-
-
-
+Estos comandos te permitirán verificar si Ollama está en ejecución directamente desde la consola.
 
 4. Abrir `index.html` en el navegador.
 
