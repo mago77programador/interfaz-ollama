@@ -1,5 +1,5 @@
 // Fetch available models from OLLama
-fetch('/models')
+fetch('http://localhost:8000/models')
   .then(response => response.json())
   .then(models => {
     const modelSelect = document.getElementById('model-select');
@@ -17,7 +17,6 @@ fetch('/models')
 // Handle prompt submission
 const promptInput = document.getElementById('prompt-input');
 const submitBtn = document.getElementById('submit-btn');
-const promptDisplay = document.getElementById('prompt-display');
 const reasoningDisplay = document.getElementById('reasoning-display');
 const responseDisplay = document.getElementById('response-display');
 
@@ -25,7 +24,7 @@ submitBtn.addEventListener('click', () => {
   const prompt = promptInput.value.trim();
   if (prompt) {
     const selectedModel = document.getElementById('model-select').value;
-    fetch(`/generate?model=${selectedModel}`, {
+    fetch(`http://localhost:8000/generate?model=${selectedModel}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -34,7 +33,6 @@ submitBtn.addEventListener('click', () => {
     })
     .then(response => response.json())
     .then(data => {
-      promptDisplay.textContent = prompt;
       reasoningDisplay.textContent = data.reasoning;
       responseDisplay.textContent = data.response;
     })

@@ -1,52 +1,52 @@
 # OLLama Interface
 
-This is a simple web interface for interacting with the OLLama language model. It allows you to select a model, enter a prompt, and view the model's response, including the prompt, reasoning, and final response.
+Este es un interfaz web simple para interactuar con el modelo de lenguaje OLLama. Te permite seleccionar un modelo, ingresar un prompt y ver la respuesta del modelo, incluyendo el razonamiento y la respuesta final.
 
-## Features
+## Características
 
-- Select from available OLLama models
-- Enter a prompt and submit it to the model
-- Display the prompt, reasoning, and final response in separate sections
-- Responsive and visually appealing design
+- Selección de modelos OLLama disponibles
+- Ingresar un prompt y enviarlo al modelo
+- Mostrar el razonamiento y la respuesta final en secciones separadas
+- Diseño responsivo y visualmente atractivo
 
-## Getting Started
+## Comenzando
 
-### Prerequisites
+### Prerrequisitos
 
-- A running instance of the OLLama server
-- A modern web browser (e.g., Google Chrome, Mozilla Firefox, Microsoft Edge)
+- Una instancia en ejecución del servidor OLLama en local
+- Un navegador web moderno (por ejemplo, Google Chrome, Mozilla Firefox, Microsoft Edge)
 
-### Installation
+### Instalación
 
-1. Clone the repository:
+1. Clona el repositorio:
 
-   ```
+   ```sh
    git clone https://github.com/mago77programador/interfaz-ollama.git
    ```
 
-2. Navigate to the project directory:
+2. Navega al directorio del proyecto:
 
-   ```
+   ```sh
    cd interfaz-ollama
    ```
 
-3. Open the `index.html` file in your web browser.
+3. Abre el archivo `index.html` en tu navegador web.
 
-### Usage
+### Uso
 
-1. Select the desired OLLama model from the dropdown menu.
-2. Enter your prompt in the text area.
-3. Click the "Submit" button to generate the response.
-4. The prompt, reasoning, and final response will be displayed in the corresponding sections.
+1. Selecciona el modelo OLLama deseado del menú desplegable.
+2. Ingresa tu prompt en el área de texto.
+3. Haz clic en el botón "Submit" para generar la respuesta.
+4. El razonamiento y la respuesta final se mostrarán en las secciones correspondientes.
 
-## Customization
+## Personalización
 
-You can customize the appearance of the interface by modifying the CSS file (`style.css`). The color palette and layout can be adjusted to fit your preferences.
+Puedes personalizar la apariencia del interfaz modificando el archivo CSS (`style.css`). La paleta de colores y el diseño se pueden ajustar según tus preferencias.
 
-## Contributing
+## Contribuyendo
 
-If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+Si encuentras algún problema o tienes sugerencias para mejoras, no dudes en abrir un issue o enviar un pull request.
 
-## License
+## Licencia
 
-This project is licensed under the [MIT License](LICENSE).
+Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
