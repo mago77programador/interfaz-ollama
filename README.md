@@ -21,13 +21,13 @@ This is a simple web interface for interacting with the OLLama language model. I
 1. Clone the repository:
 
    ```
-   git clone https://github.com/mago77programador/ollama-interface.git
+   https://github.com/mago77programador/interfaz-ollama.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd ollama-interface
+   cd interfaz-ollama
    ```
 
 3. Open the `index.html` file in your web browser.
