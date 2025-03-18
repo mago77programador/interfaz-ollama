@@ -26,10 +26,25 @@ h1 {
   color: var(--primary-color);
 }
 
-.model-selector {
-  display: flex;
-  justify-content: center;
+.model-container {
   margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
 }
 
 .prompt-container {

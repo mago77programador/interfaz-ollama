@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OLLama Interface</title>
+    <title>Ollama Interface</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <h1>Ollama Interface</h1>
+      <div class="model-container">
+        <label for="model-select">Select Model:</label>
+        <select id="model-select">
+          <option value="" disabled selected>Select a model</option>
+        </select>
+      </div>
       <div class="prompt-container">
         <textarea
           id="prompt-input"
